@@ -1,3 +1,3 @@
-# TREC-System
+# backend_code folder
 
-This is the beginning of the project
+Add all backend files here.
