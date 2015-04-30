@@ -25,7 +25,7 @@ class API
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else{
 				$patient = $result->fetch_array(MYSQL_ASSOC);
 				//  ** Need to swap array for explode when a delimeter is chosen in the SQL database ** 
@@ -39,7 +39,7 @@ SQL;
 				
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -55,7 +55,7 @@ SQL;
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else{
 				$patient = $result->fetch_array(MYSQL_ASSOC);
 				//  ** Need to swap array for explode when a delimeter is chosen in the SQL database ** 
@@ -68,7 +68,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -84,7 +84,7 @@ SQL;
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else{
 				$patient = $result->fetch_array(MYSQL_ASSOC);
 				//  ** Need to swap array for explode when a delimeter is chosen in the SQL database ** 
@@ -97,7 +97,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -115,7 +115,7 @@ SQL;
 		if($result = $this->db->query($sql)){
 			
 			if($result->num_rows === 0)
-				return (array(['Error' => 'No Match']));
+				return (array());
 			else
 			{
 				$jsonArray = array();
@@ -132,7 +132,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -149,7 +149,7 @@ SQL;
 		if($result = $this->db->query($sql)){
 			
 			if($result->num_rows === 0)
-				return (array(['Error' => 'No Match']));
+				return (array());
 			else
 			{
 				$jsonArray = array();
@@ -166,7 +166,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -181,7 +181,7 @@ SQL;
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else
 			{
 				$jsonArray = array();
@@ -198,7 +198,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -266,7 +266,7 @@ SQL;
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else
 			{
 				$jsonArray = array();
@@ -282,7 +282,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 	
@@ -304,7 +304,7 @@ SQL;
 
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else{
 				$record =  $result->fetch_array(MYSQL_ASSOC);
 				//  ** Need to swap array for explode when a delimeter is chosen in the SQL database ** 
@@ -316,7 +316,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 
@@ -333,7 +333,7 @@ SQL;
 SQL;
 		if($result = $this->db->query($sql)){
 			if($result->num_rows === 0)
-				return (array('Error' => 'No Match'));
+				return (array());
 			else
 			{
 				$jsonArray = array();
@@ -344,7 +344,7 @@ SQL;
 			}
 		}
 		else{
-			return (array('Error' => 'Database Error [' . $this->db->error . ']'));
+			return (array());
 		}
 	}
 }
